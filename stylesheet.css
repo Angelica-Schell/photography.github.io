@@ -1,0 +1,160 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+	font-family: "Alegreya SC";
+}
+/* Menu Bar */
+.menu-bar {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+}
+
+.menu-block {
+	width: 100%;
+	height: 83px;
+	background-color: #0006;
+	line-height: 80px;
+}
+
+.menu-block ul {
+	float: right;
+	margin-right: 50px;
+
+}
+.menu-block ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.menu-block ul li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 29px;
+	font-size: 25px;
+}
+
+.menu-block ul li:hover {
+	transition: all 0.4s ease;
+	background-color: #9996;
+}
+
+.active {
+	background-color: blue;
+}
+
+.dropbtn {
+  background-color: #555;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, {
+  background-color: #2980B9;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #555;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: relative;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+.show {display: block;}
+/* End Menu Bar */
+
+.bg-text {
+  background-color: #0008; /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  flex: 33.3%;
+  padding: 5px;
+  transform: rotate(270deg);
+
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0009;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
