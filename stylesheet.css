@@ -173,7 +173,7 @@
   float: right: width: 70%;
 }
 
-.row {  
+.rows {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -182,23 +182,24 @@
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.main {
   -ms-flex: 60%; /* IE10 */
   flex: 60%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {   
-  -ms-flex: 40%; /* IE10 */
-  flex: 40%;
   background-color: white;
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
+/* Main column */
+.side {   
+  -ms-flex: 40%; /* IE10 */
+  flex: 40%;
+  background-color: #f1f1f1;
   padding: 20px;
+}
+
+/* Fake image, just for this example */
+.collect_img {
+  background-color: #aaa;
+  padding: 10px;
+  width:100%;
 }
